@@ -4,7 +4,7 @@ A = [ -vcross(omega) vcross(omega)
        zeros(3,3)    zeros(3,3)   ];
 [Phi] = compute_discrete(A, dt);
 B = eye(6);
-Qd = B*Q*B'*dt;
+Qd = B*Q*B'*dt + 1/2*A*B*Q*B'*(dt)^2 + 1/2*B*Q*B'*A'*(dt)^2 + 1/3*A*B*Q*B'*A'*(dt)^3;
 
 % compute discrete time system
 function [Phi] = compute_discrete(A, dt)
