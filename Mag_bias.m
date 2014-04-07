@@ -39,7 +39,7 @@ ang_rate = pi/360;                     % magnitude of the generated angular rate
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%% Estimation options %%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-var_Q = 0.2;                          % Cov for system dynamics, see IV.B. [1]
+var_Q = 0.1;                           % Cov for system dynamics, see IV.B. [1]
 var_x_init = 25;                       % variance for init x_0  estimae
 var_bias_init = 400;                   % variance for init bias estimate   
 
