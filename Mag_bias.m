@@ -33,7 +33,7 @@ sim_time = 60;                         % simulation time length, in second
 sigma_m = 1;                           % std dev of the mag meas noise, in mG
 sigma_g = 5e-3;                        % std dev of the gyro meas noise, in rad/s
 sim_freq = 100;                        % the freq to generate sim data, in Hz
-ang_rate = pi/360;                     % magnitude of the generated angular rate
+ang_rate = pi/720;                     % magnitude of the generated angular rate
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
