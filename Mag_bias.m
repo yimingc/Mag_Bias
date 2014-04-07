@@ -89,7 +89,7 @@ for ind_sim = 1:ite_num
     z_hat_0 = [euler2R_g2b(data(1, ind_euler))*x_0+rand(3,1)*sqrt(var_x_init);bias+rand(3,1)*sqrt(var_bias_init)];% zeros(6,1);               
     z_hat = z_hat_0;                    % init estimate z_hat = [0,...,0]
     Q = var_Q*eye(6);  % instead of Q = blkdiag(I3*sigma_g,I3*sigma_g),                      
-    R = I3*sigma_m;
+    R = I3*sigma_m^2;
     P_0 = blkdiag(I3*var_x_init, I3*var_bias_init);
     P_plus = P_0;
     H = [I3, I3];                       % measurement
