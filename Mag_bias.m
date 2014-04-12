@@ -120,7 +120,7 @@ for ind_sim = 1:ite_num
             norm_hat = norm(z_hat(1:3)-z_hat(4:6));        % estimated norm
             hh = [z_hat(1)-z_hat(4),z_hat(2)-z_hat(5), z_hat(3)-z_hat(6)]/norm_hat; % for the norm meas
             H = [I3, zeros(3,3)
-                hh, -hh];       % measurement model
+                 hh, -hh];       % measurement model
         else
             H = [I3, zeros(3,3)];
         end
